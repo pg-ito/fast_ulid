@@ -14,7 +14,7 @@ implement of fast ULID for php
         }
     ]
 ```
-
+### type require command
 
 ```
 composer require pg-ito/fast_ulid:dev-main
@@ -30,4 +30,13 @@ use \PgIto\FastUlid\FastUlid;
 
 echo FastUlid::gen().PHP_EOL;
 // 01GAGJ3TPGR82PLAS7K37HNIDV
+```
+
+## benchmark
+
+```
+$ php bench.php 
+number of generated ids 1000000
+elapsed 1.0562382 Sec.
+1056.2382 nSec/generate
 ```
