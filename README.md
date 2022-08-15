@@ -1,4 +1,4 @@
-# php_ulid
+# fast_ulid
 implement of fast ULID for php
 
 ## install
