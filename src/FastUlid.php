@@ -1,4 +1,6 @@
 <?php
+namespace PgIto\FastUlid;
+
 class FastUlid{
     private static string $base32_chars = '0123456789ABCDEFGHIJKLMNOPQRSTUV';
     public static function gen(): string{
