@@ -17,7 +17,7 @@ implement of fast ULID for php
 ### type require command
 
 ```
-composer require pg-ito/fast_ulid:dev-main
+$ composer require pg-ito/fast_ulid:dev-main
 ```
 
 
@@ -39,4 +39,10 @@ $ php bench.php
 number of generated ids 1000000
 elapsed 1.0562382 Sec.
 1056.2382 nSec/generate
+```
+
+## test
+
+```
+$ ./vendor/bin/phpunit ./tests/
 ```
