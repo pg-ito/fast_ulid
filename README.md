@@ -3,17 +3,6 @@ implement of fast ULID for php
 
 ## install
 
-
-### add repository in composer.json
-
-```
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/pg-ito/fast_ulid.git"
-        }
-    ]
-```
 ### type require command
 
 ```
@@ -35,10 +24,16 @@ echo FastUlid::gen().PHP_EOL;
 ## benchmark
 
 ```
+$ php -v
+PHP 8.1.2 (cli) (built: Jul 21 2022 12:10:37) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2, Copyright (c), by Zend Technologies
+    
 $ php bench.php 
 number of generated ids 1000000
-elapsed 1.0562382 Sec.
-1056.2382 nSec/generate
+elapsed 3.9800428 Sec.
+3980.0428 nSec/generate
 ```
 
 ## test
