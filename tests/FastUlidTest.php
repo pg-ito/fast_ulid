@@ -40,7 +40,6 @@ class FastUlidTest extends TestCase{
         $future_timestamp = (float)281456521200;// 10889-01-01 00:00:00
         $short_timestamp1 = FastUlid::short_timestamp($future_timestamp);// 7vvepvegc0
         $short_timestamp2 = FastUlid::short_timestamp($future_timestamp);
-        var_dump($short_timestamp1);
         $this->assertSame($short_timestamp1, $short_timestamp2);  
     }
     public function testShortTimestampFutureLength(){

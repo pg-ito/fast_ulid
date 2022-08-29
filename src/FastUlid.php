@@ -21,8 +21,8 @@ class FastUlid{
         return ($len>10)? substr($base32,-10): str_pad( $base32, 10, '0', STR_PAD_LEFT);
     }
     public static function random():string{
-        $upper =  str_pad( static::base10_to_32(mt_rand(0,0xFFFFFFFFFF)), 8, '0', STR_PAD_LEFT);
-        $lower =  str_pad( static::base10_to_32(mt_rand(0,0xFFFFFFFFFF)), 8, '0', STR_PAD_LEFT);
+        $upper =  str_pad( static::base10_to_32(random_int(0,0xFFFFFFFFFF)), 8, '0', STR_PAD_LEFT);
+        $lower =  str_pad( static::base10_to_32(random_int(0,0xFFFFFFFFFF)), 8, '0', STR_PAD_LEFT);
         return $upper.$lower;
     }
     protected static function base10_to_32(int $num):string{
