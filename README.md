@@ -18,7 +18,7 @@ $loader = require_once __DIR__.'/vendor/autoload.php';
 use \PgIto\FastUlid\FastUlid;
 
 echo FastUlid::gen().PHP_EOL;
-// 01GAGJ3TPGR82PLAS7K37HNIDV
+// 01GBTYCV1VFFEC1VTRXFJ2VPN7
 ```
 
 ## benchmark
@@ -29,11 +29,11 @@ PHP 8.1.2 (cli) (built: Jul 21 2022 12:10:37) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2, Copyright (c), by Zend Technologies
-    
+
 $ php bench.php 
 number of generated ids 1000000
-elapsed 3.9800428 Sec.
-3980.0428 nSec/generate
+elapsed 2.1725078 Sec.
+2172.5078 nSec/generate
 ```
 
 ## test
